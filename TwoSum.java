@@ -29,6 +29,7 @@ class TwoSum {
         System.out.println("Enter the target element: ");
         int target = sc.nextInt();
         System.out.println(Arrays.toString(s.twoSum(nums,target)));
+        sc.close();
     
     }
 }
