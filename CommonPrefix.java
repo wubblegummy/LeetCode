@@ -1,28 +1,27 @@
 import java.util.*;
-class CommonPrefix {
+class Solution {
     public String longestCommonPrefix(String[] strs) {
         String prefix = "";
-        for (int i=0;i<strs.length;i++){
-            if ((strs[0].charAt(i))==(strs[1].charAt(i)) && (strs[1].charAt(i))==(strs[2].charAt(i))){
-                prefix +=strs[1].charAt(i);
+        for (int i=0;i<strs[0].length();i++){
+            char c = strs[0].charAt(i);
+            for (int j=0;j<strs.length;j++){
+                if (i>=strs[j].length() || strs[j].charAt(i)!=c){
+                    return prefix;
+                }
             }
+           prefix +=c;
         }
-        return prefix;
+    return prefix;
     }
-    /*if (strs[i].compareTo(strs[i+1])&&strs[i].compareTo(strs[i+2])){
-        return strs[i];
-    }
-    else if (strs[i].compareTo(strs[i+1])&&strs[i].compareTo(strs[i+2]))*/
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        CommonPrefix s = new CommonPrefix();
+        Solution s = new Solution();
         System.out.println("Enter the words: ");
-        String[] word = sc.nextLine().split(",");
-        String[] strs = new String[word.length];
-        for (int i=0;i<word.length;i++){
-            strs[i] = word[i];
+        String[] tokens = sc.nextLine().split(",");
+        String[] strs = new String[tokens.length];
+        for (int i=0;i<tokens.length;i++){
+            strs[i] = tokens[i];
         }
         System.out.println(s.longestCommonPrefix(strs));
-        sc.close();
     }
 }
