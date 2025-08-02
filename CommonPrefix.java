@@ -15,7 +15,7 @@ class CommonPrefix {
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        Solution s = new Solution();
+        CommonPrefix  s = new CommonPrefix();
         System.out.println("Enter the words: ");
         String[] tokens = sc.nextLine().split(",");
         String[] strs = new String[tokens.length];

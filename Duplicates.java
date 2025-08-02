@@ -28,7 +28,7 @@ class Duplicates {
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        Solution s = new Solution();
+        Duplicates s = new Duplicates();
         System.out.println("Enter the array: ");
         String[] input = sc.nextLine().split(",");
         int n = input.length;
