@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class CommonPrefix {
     public String longestCommonPrefix(String[] strs) {
         String prefix = "";
         for (int i=0;i<strs[0].length();i++){

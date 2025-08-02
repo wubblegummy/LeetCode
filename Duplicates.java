@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class Duplicates {
     public int removeDuplicates(int[] nums) {
         int orgnum = nums.length;
         int n = nums.length;
