@@ -23,5 +23,6 @@ class Solution {
             strs[i] = tokens[i];
         }
         System.out.println(s.longestCommonPrefix(strs));
+        sc.close();
     }
 }
