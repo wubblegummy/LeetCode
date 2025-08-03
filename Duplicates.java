@@ -9,10 +9,8 @@ class Duplicates {
                     for (int k = j+1; k<n; k++){
                         nums[k-1] = nums[k];
                     }
-                    if (j<=n){
                         n--;
                         j--;
-                    }
                 }
             }
         }
